@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+#banner{
+    display: flex;
+    justify-content: center;
+   
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.39),rgba(255, 255, 255, 0.384)),url(image/art.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+}
+
+
+
+
+
+
+
+
+.baner-text h1{
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    padding-top: 3%;
+   
+}
+
+
+.card{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 35%;
+    left: 15%;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card .back h2{
+    font-size: 30px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+
+.card:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}
+
+
+.card1{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 35%;
+    left: 72%;
+}
+
+
+
+
+
+.card1 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card1 .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card1 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1 .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card1 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card1 .back h2{
+    font-size: 23px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card1 .back p{
+    letter-spacing: 1px;
+}
+
+
+.card1:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card1:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}

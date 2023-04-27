@@ -1,0 +1,359 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.home{
+    display: flex;
+    justify-content: center;
+   
+    min-height: 100vh;
+    background:linear-gradient(rgba(165, 42, 42, 0),rgba(255, 0, 0, 0)), url(image/bean.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   
+
+}
+
+
+
+
+.conteiner{
+    text-align: center;
+   padding-top: 3%;
+  color:black;
+  font-size: 18.5px;
+ 
+
+}
+
+
+.card{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 35%;
+    left: 2%;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.card .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card .back h2{
+    font-size: 30px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+
+.card:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}
+
+
+
+.card1{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 35%;
+    left: 18%;
+}
+
+
+
+
+
+.card1 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card1 .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card1 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card1 .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card1 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card1 .back h2{
+    font-size: 23px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card1 .back p{
+    letter-spacing: 1px;
+}
+
+
+.card1:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card1:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}
+
+
+
+
+
+.card2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 35%;
+    left: 64%;
+}
+
+
+
+
+
+.card2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card2 .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card2 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card2 .back h2{
+    font-size: 23px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card2 .back p{
+    letter-spacing: 1px;
+}
+
+
+.card2:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card2:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}
+
+
+.card3{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 35%;
+    left: 80%;
+}
+
+
+
+
+
+.card3 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card3 .front{
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px black;
+}
+
+
+.card3 .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color:blue;
+    background: rgba(0, 0,0, .4);
+    text-align: center;
+}
+
+.card3 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+
+}
+
+
+.card3 .back h2{
+    font-size: 23px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.card3 .back p{
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+
+.card3:hover  .front{
+    transform: perspective(600px) rotateY(180deg) ;
+}
+
+
+.card3:hover  .back{
+    transform: perspective(600px) rotateY(360deg) ;
+}
